@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: lightgray;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid gray;
+}
+
+label {
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.card label,
+input,
+button {
+    margin-bottom: 1rem;
+}
+
+.result-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cash-info {
+    font-size: large;
+    font-weight: bold;
+}
+
+table {
+    margin: 2rem 0rem;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button {
+    padding: 0.6rem 0.75rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 420px) {
+    .card {
+        width: 100%;
+    }
+}

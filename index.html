@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <title>Cash Register Manager</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cash Register Manager</h1>
+            <p>Application to find the cash to be returned</p>
+        </header>
+        <div class="container">
+            <div class="card">
+                <label for="bill-amount">Bill Amount</label>
+                <input
+                    id="bill-amount"
+                    onkeypress="return !(event.charCode == 46)"
+                    min="1"
+                />
+                <label for="cash-given">Cash Given</label>
+                <input
+                    id="cash-given"
+                    onkeypress="return !(event.charCode == 46)"
+                    min="1"
+                />
+                <button id="btn-calculate">Calculate</button>
+                <div class="result-container">
+                    <p id="cash-info">Return Change</p>
+                    <table>
+                        <tr>
+                            <th>No Of Notes</th>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                            <td class="no-of-notes">0</td>
+                        </tr>
+                        <tr>
+                            <th>Note</th>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td>100</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
